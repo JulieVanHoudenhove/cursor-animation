@@ -32,5 +32,12 @@ nav {
     height: 3rem;
     border: 2px solid black;
     border-radius: 50%;
-    position: relative;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.link-grow {
+    transform: scale(2);
+    background: black;
 }
