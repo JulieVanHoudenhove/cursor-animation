@@ -7,3 +7,22 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    min-height: 10vh;
+    align-items: center;
+    margin: auto;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav-links, h1 {
+    flex: 1;
+}
