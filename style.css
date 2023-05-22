@@ -6,21 +6,28 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    cursor: none;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
     min-height: 10vh;
     align-items: center;
     margin: auto;
+    padding: 0 100px;
+    box-shadow: 0 0 80px rgba(0,0,0,.07);
 }
 
 .nav-links {
     display: flex;
     justify-content: space-between;
     list-style: none;
+}
+
+.nav-links li {
+    padding: 1rem;
 }
 
 .nav-links, h1 {
@@ -35,9 +42,32 @@ nav {
     position: absolute;
     transform: translate(-50%, -50%);
     pointer-events: none;
+    transition: all 0.3s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+    z-index: -1;
+    backdrop-filter: grayscale();
 }
 
 .link-grow {
     transform: scale(2);
     background: black;
+}
+
+.hovered-link {
+    color: white;
+}
+
+section {
+    padding: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.front-cover img {
+    position: relative;
+    z-index: -3;
+    height: 77vh;
 }
