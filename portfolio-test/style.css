@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    cursor: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 10vh;
+    align-items: center;
+    margin: auto;
+    padding: 0 100px;
+    box-shadow: 0 0 80px rgba(0,0,0,.07);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav-links li {
+    padding: 1rem;
+}
+
+.nav-links, h1 {
+    flex: 1;
+}
+
+/* Styles de base pour le curseur personnalisé */
+body, html {
+    cursor: none; /* Masquer le curseur par défaut */
+}
+
+/* Styles de base pour le curseur personnalisé */
+body, html {
+    cursor: none; /* Masquer le curseur par défaut */
+}
+
+/* Style pour le petit point noir */
+#custom-cursor {
+    position: fixed;
+    width: 6px; /* Taille du point noir */
+    height: 6px;
+    background-color: black;
+    border-radius: 50%;
+    pointer-events: none; /* Pour ne pas interférer avec les interactions utilisateur */
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+}
+
+/* Style pour le cercle fin */
+#custom-cursor-circle {
+    position: fixed;
+    width: 40px; /* Diamètre du cercle */
+    height: 40px;
+    border: 1px solid rgb(191, 191, 191); /* Bordure du cercle */
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease-out; /* Animation de la transition */
+}
+
+/* Positionner le curseur personnalisé */
+
+
+section {
+    padding: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.front-cover img {
+    position: relative;
+    z-index: -3;
+    height: 77vh;
+}
