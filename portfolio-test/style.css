@@ -47,8 +47,8 @@ body, html {
 /* Style pour le petit point noir */
 #custom-cursor {
     position: fixed;
-    width: 6px; /* Taille du point noir */
-    height: 6px;
+    width: 4px; /* Taille du point noir */
+    height: 4px;
     background-color: black;
     border-radius: 50%;
     pointer-events: none; /* Pour ne pas interférer avec les interactions utilisateur */
